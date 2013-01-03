@@ -2,8 +2,9 @@
 package fizzbuzz
 
 const (
-	FIZZ = 3
-	BUZZ = 5
+	FIZZ     = 3
+	BUZZ     = 5
+	FIZZBUZZ = 15
 )
 
 // Most performant is the what I call the "nested cliff" approach
@@ -116,6 +117,24 @@ func Type6(i int) string {
 		if i%5 == 0 {
 			return "BUZZ"
 		}
+	}
+
+	return string(i)
+}
+
+// Clearer, but this barely lags behind Type1
+func Type7(i int) string {
+
+	if i%FIZZBUZZ == 0 {
+		return "FIZZBUZZ"
+	}
+
+	if i%FIZZ == 0 {
+		return "FIZZ"
+	}
+
+	if i%BUZZ == 0 {
+		return "BUZZ"
 	}
 
 	return string(i)

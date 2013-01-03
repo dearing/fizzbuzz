@@ -63,6 +63,14 @@ func TestType6(t *testing.T) {
 	}
 }
 
+func TestType7(t *testing.T) {
+	for k, v := range tests {
+		if Type6(v) != k {
+			t.Errorf("Failed on %s != %v", k, v)
+		}
+	}
+}
+
 /*	
 ========================================
 	BENCHMARKS!!
@@ -103,5 +111,11 @@ func BenchmarkType5(b *testing.B) {
 func BenchmarkType6(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Type6(b.N)
+	}
+}
+
+func BenchmarkType7(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Type7(b.N)
 	}
 }
