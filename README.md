@@ -18,6 +18,7 @@ of benchmarks
 ---
 Execute `go test -bench=".*"` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
+on my desktop with and i5
 ```
 PASS
 BenchmarkType1  500000000                3.70 ns/op
@@ -28,6 +29,19 @@ BenchmarkType5  200000000                8.73 ns/op
 BenchmarkType6  500000000                3.68 ns/op
 BenchmarkType7  500000000                5.46 ns/op
 ok      github.com/dearing/fizzbuzz     19.142s
+```
+
+on my fiddlin' laptop with a mobile celeron
+```
+PASS
+BenchmarkType1  20000000                85.4 ns/op
+BenchmarkType2  20000000               101 ns/op
+BenchmarkType3  20000000                83.2 ns/op
+BenchmarkType4   5000000               645 ns/op
+BenchmarkType5  20000000                99.5 ns/op
+BenchmarkType6  20000000                85.3 ns/op
+BenchmarkType7  20000000               101 ns/op
+ok      github.com/dearing/fizzbuzz     15.603s
 ```
 
 conclusions
