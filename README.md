@@ -26,3 +26,4 @@ BenchmarkType4  100000000               18.2 ns/op
 BenchmarkType5  200000000                8.51 ns/op
 BenchmarkType6  500000000                4.12 ns/op
 ```
+Yea, [Type1](https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L10) is best
