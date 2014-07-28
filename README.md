@@ -3,7 +3,6 @@ fizzbuzz
 
 a simple golang testing and benchmark example
 
-[ ![Codeship Status for dearing/fizzbuzz](https://www.codeship.io/projects/44aba1b0-f87c-0131-b22c-4ee067ef6546/status)](https://www.codeship.io/projects/28703)
 
 get it!
 ----
