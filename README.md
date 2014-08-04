@@ -6,7 +6,7 @@ fizzbuzz
 a simple golang testing and benchmark example
 
 
-get it!!
+get it!
 ----
 ```
 git clone https://github.com/dearing/fizzbuzz
