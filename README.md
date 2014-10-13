@@ -11,7 +11,7 @@ get it!
 git clone https://github.com/dearing/fizzbuzz
 ```
 
-of testing
+on testing
 ---
 Just run `go test` to see the testing package at work.  Note there is no compiled 'cmd' here for you to run directly, instead this is a complete package, y'know for all your fizzbuzzing needs.
 
