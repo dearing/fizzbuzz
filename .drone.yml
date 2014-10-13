@@ -1,7 +1,7 @@
 image: go1.2
 script:
-  - go test
-  - go test -bench=".*"
+  - time go test
+  - time go test -bench=".*"
 notify:
   email:
     recipients:
