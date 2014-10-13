@@ -1,7 +1,6 @@
 fizzbuzz 
 ========
 
-[![Build Status](http://drone.dearing.link/github.com/dearing/fizzbuzz/status.svg?branch=master)](http://drone.dearing.link/github.com/dearing/fizzbuzz)
 
 a simple golang testing and benchmark example
 
