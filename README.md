@@ -1,6 +1,5 @@
-# fizzbuzz 
+# fizzbuzz [![Build Status](https://drone.io/github.com/dearing/fizzbuzz/status.png)](https://drone.io/github.com/dearing/fizzbuzz/latest)
 ========
-[![Build Status](https://drone.io/github.com/dearing/fizzbuzz/status.png)](https://drone.io/github.com/dearing/fizzbuzz/latest)
 
 a simple golang testing and benchmark example
 
