@@ -2,17 +2,15 @@
 a simple golang testing and benchmark example
 
 # get it!
-----
 ```
 git clone https://github.com/dearing/fizzbuzz
 ```
 
 # on testing
----
+
 Just run `go test` to see the testing package at work.  Note there is no compiled 'cmd' here for you to run directly, instead this is a complete package, y'know for all your fizzbuzzing needs.
 
 # of benchmarks
----
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
 on my desktop with and i5
@@ -42,7 +40,6 @@ ok      github.com/dearing/fizzbuzz     15.603s
 ```
 
 # conclusions
-----
 Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy by dropping it into he Go library and building support for it withint the toolchain.  Now if only I could find more practical uses for my time...
 
 * [Type1](https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L10-L26) the a winner! ... ignoring the Type6 duplicate minus the constants.
@@ -50,5 +47,4 @@ Testing and Documentation are obviously important in just about *all* things in 
 * [Type2](https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L30-L45) would be the best choice in clarity and speed if you're that kinda person.
 
 # todo
----
 Create up to 50 variations of a fizzbuzzing algo to demonstrate just how crazy I can be when I cannot sleep.
