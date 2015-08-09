@@ -1,10 +1,12 @@
 # fizzbuzz [![Build Status](https://drone.io/github.com/dearing/fizzbuzz/status.png)](https://drone.io/github.com/dearing/fizzbuzz/latest)
 a simple golang testing and benchmark example
 
-# get it!
+# try it out
 ```
-git clone https://github.com/dearing/fizzbuzz
+go get github.com/dearing/fizzbuzz
+go test -bench=. github.com/dearing/fizzbuzz
 ```
+or one can just click the badge above and see it on drone.io
 
 # on testing
 
