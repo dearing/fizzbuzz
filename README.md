@@ -41,6 +41,19 @@ BenchmarkType7  20000000               101 ns/op
 ok      github.com/dearing/fizzbuzz     15.603s
 ```
 
+Raspberry Pi 2 | ArchLinuxArm
+```
+PASS
+BenchmarkType1-4        50000000                39.0 ns/op
+BenchmarkType2-4        30000000                39.0 ns/op
+BenchmarkType3-4        30000000                42.3 ns/op
+BenchmarkType4-4         5000000               254 ns/op
+BenchmarkType5-4        20000000                68.0 ns/op
+BenchmarkType6-4        50000000                39.0 ns/op
+BenchmarkType7-4        50000000                56.8 ns/op
+ok      github.com/dearing/fizzbuzz     13.241s
+```
+
 # conclusions
 Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy by dropping it into he Go library and building support for it withint the toolchain.  Now if only I could find more practical uses for my time...
 
