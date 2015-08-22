@@ -1,10 +1,11 @@
-// package fizzbuzz is all about demonstrating and testing GO in various ways
+// Package fizzbuzz is all about demonstrating and testing GO in various ways
 package fizzbuzz
 
+// Constants to demonstrate the challenge
 const (
-	FIZZ     = 3
-	BUZZ     = 5
-	FIZZBUZZ = 15
+	FIZZ     = 3  // multiples of 3 yield fizz
+	BUZZ     = 5  // multiples of 5 yield buzz
+	FIZZBUZZ = 15 // finally, multiples of 15 yield fizzbuzz
 )
 
 var memoized map[int]string
@@ -13,7 +14,7 @@ func init() {
 	memoized = make(map[int]string)
 }
 
-// Most performant is the what I call the "nested cliff" approach
+// Type1 is the most performant I could come up with
 func Type1(i int) string {
 
 	if i%FIZZ == 0 {
@@ -32,7 +33,7 @@ func Type1(i int) string {
 	return string(i)
 }
 
-// Clearer, but this barely lags behind Type1
+// Type2 is clearer that Type1
 func Type2(i int) string {
 
 	if i%FIZZ == 0 && i%BUZZ == 0 {
@@ -50,7 +51,7 @@ func Type2(i int) string {
 	return string(i)
 }
 
-// 3rd best and only because we now fiddle with a bool
+// Type3 tosses in a bool for working
 func Type3(i int) string {
 	p := false
 	if i%FIZZ == 0 {
@@ -71,7 +72,7 @@ func Type3(i int) string {
 
 }
 
-// Worst of the bunch this approach wastes cycles messing with immutable stings
+// Type4 demonstrates how messing with the immutable strings is costly
 func Type4(i int) string {
 	p := false
 	r := ""
@@ -92,7 +93,7 @@ func Type4(i int) string {
 	return r
 }
 
-// Sadly the 2nd worst of the Types but most clear; order matters in this kind of switch.
+// Type5 uses a switch though appears less performant than Type2
 func Type5(i int) string {
 	switch {
 
@@ -109,7 +110,7 @@ func Type5(i int) string {
 	return string(i)
 }
 
-// A copy of Type1 but without using constants; proving something.
+// Type6 is exactly like Type1 but works with without the constants defined before
 func Type6(i int) string {
 
 	if i%3 == 0 {
@@ -128,7 +129,7 @@ func Type6(i int) string {
 	return string(i)
 }
 
-// Clearer, but this barely lags behind Type1
+// Type7 is like Type1 but without the nested start
 func Type7(i int) string {
 
 	if i%FIZZBUZZ == 0 {
