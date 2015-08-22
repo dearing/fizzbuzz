@@ -20,14 +20,12 @@ func Type1(i int) string {
 	if i%FIZZ == 0 {
 		if i%BUZZ == 0 {
 			return "FIZZBUZZ"
-		} else {
-			return "FIZZ"
 		}
+		return "FIZZ"
+	}
 
-	} else {
-		if i%BUZZ == 0 {
-			return "BUZZ"
-		}
+	if i%BUZZ == 0 {
+		return "BUZZ"
 	}
 
 	return string(i)
@@ -60,13 +58,12 @@ func Type3(i int) string {
 	if i%BUZZ == 0 {
 		if p {
 			return "FIZZBUZZ"
-		} else {
-			return "BUZZ"
 		}
-	} else {
-		if p {
-			return "FIZZ"
-		}
+		return "BUZZ"
+	}
+
+	if p {
+		return "FIZZ"
 	}
 	return string(i)
 
@@ -116,14 +113,12 @@ func Type6(i int) string {
 	if i%3 == 0 {
 		if i%5 == 0 {
 			return "FIZZBUZZ"
-		} else {
-			return "FIZZ"
 		}
+		return "FIZZ"
+	}
 
-	} else {
-		if i%5 == 0 {
-			return "BUZZ"
-		}
+	if i%5 == 0 {
+		return "BUZZ"
 	}
 
 	return string(i)
@@ -147,6 +142,7 @@ func Type7(i int) string {
 	return string(i)
 }
 
+// Type8 does the same as type5 but with a named return
 func Type8(i int) (result string) {
 	switch {
 
@@ -166,6 +162,7 @@ func Type8(i int) (result string) {
 	return
 }
 
+// Type9 does the same as type8 but attempts to memoize the results
 func Type9(i int) (result string) {
 
 	if memoized[i] != "" {
