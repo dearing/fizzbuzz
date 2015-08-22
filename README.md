@@ -16,13 +16,13 @@ go test -bench=. github.com/dearing/fizzbuzz
 on testing
 ----------
 
-Just run `go test` to see the testing package at work.  Note there is no compiled 'cmd' here for you to run directly, instead this is a complete package, y'know for all your fizzbuzzing needs.
+Just run `go test` to see the testing package at work.  Note there is no cli here for you to run directly, instead this is a complete package, y'know for all your fizzbuzzing needs.
 
 of benchmarks
 -------------
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
-raspberry pi 2 // go version go1.5 linux/arm
+*raspberry pi 2b - go1.5 linux/arm*
 -------
 ```
 PASS
@@ -42,7 +42,7 @@ ok      github.com/dearing/fizzbuzz     19.372s
 
 conclusions
 -----------
-Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy by dropping it into he Go library and building support for it withint the toolchain.  Now if only I could find more practical uses for my time...
+Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy to implement testing as part of your project with benchmarking and tracing to boot.  Now if only I could find more practical uses for my time...
 
 License and Authors
 -------------------
