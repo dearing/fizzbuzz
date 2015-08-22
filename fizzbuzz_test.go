@@ -65,7 +65,23 @@ func TestType6(t *testing.T) {
 
 func TestType7(t *testing.T) {
 	for k, v := range tests {
-		if Type6(v) != k {
+		if Type7(v) != k {
+			t.Errorf("Failed on %s != %v", k, v)
+		}
+	}
+}
+
+func TestType8(t *testing.T) {
+	for k, v := range tests {
+		if Type8(v) != k {
+			t.Errorf("Failed on %s != %v", k, v)
+		}
+	}
+}
+
+func TestType9(t *testing.T) {
+	for k, v := range tests {
+		if Type9(v) != k {
 			t.Errorf("Failed on %s != %v", k, v)
 		}
 	}
@@ -75,7 +91,7 @@ func TestType7(t *testing.T) {
 ========================================
 	BENCHMARKS!!
 ========================================
-	# go test -bench=".*"
+	# go test -bench=.
 */
 
 func BenchmarkType1(b *testing.B) {
@@ -117,5 +133,24 @@ func BenchmarkType6(b *testing.B) {
 func BenchmarkType7(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Type7(b.N)
+	}
+}
+
+func BenchmarkType8(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Type8(b.N)
+	}
+}
+
+func BenchmarkType9(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Type9(b.N)
+	}
+}
+
+// Appears fast but results say it takes just as much time.
+func BenchmarkType9m(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Type9(b.N)
 	}
 }

@@ -7,6 +7,12 @@ const (
 	FIZZBUZZ = 15
 )
 
+var memoized map[int]string
+
+func init() {
+	memoized = make(map[int]string)
+}
+
 // Most performant is the what I call the "nested cliff" approach
 func Type1(i int) string {
 
@@ -103,7 +109,7 @@ func Type5(i int) string {
 	return string(i)
 }
 
-// A copy of Type1 but without using constants...
+// A copy of Type1 but without using constants; proving something.
 func Type6(i int) string {
 
 	if i%3 == 0 {
@@ -138,4 +144,50 @@ func Type7(i int) string {
 	}
 
 	return string(i)
+}
+
+func Type8(i int) (result string) {
+	switch {
+
+	case i%FIZZ == 0 && i%BUZZ == 0:
+		result = "FIZZBUZZ"
+
+	case i%FIZZ == 0:
+		result = "FIZZ"
+
+	case i%BUZZ == 0:
+		result = "BUZZ"
+
+	default:
+		result = string(i)
+	}
+
+	return
+}
+
+func Type9(i int) (result string) {
+
+	if memoized[i] != "" {
+		result = memoized[i]
+		return
+	}
+
+	switch {
+
+	case i%FIZZ == 0 && i%BUZZ == 0:
+		result = "FIZZBUZZ"
+
+	case i%FIZZ == 0:
+		result = "FIZZ"
+
+	case i%BUZZ == 0:
+		result = "BUZZ"
+
+	default:
+		result = string(i)
+	}
+
+	memoized[i] = result
+
+	return
 }
