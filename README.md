@@ -44,10 +44,6 @@ conclusions
 -----------
 Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy by dropping it into he Go library and building support for it withint the toolchain.  Now if only I could find more practical uses for my time...
 
-* [Type1] the a winner! ... ignoring the Type6 duplicate minus the constants.
-* [Type5] is the most clear in my opinion but comes in 2nd to worst in the benchmarks.
-* [Type2] would be the best choice in clarity and speed if you're that kinda person.
-
 License and Authors
 -------------------
 Author: Jacob Dearing // jacob.dearing@gmail.com
@@ -75,7 +71,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
-
-[Type1]: https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L10-L26
-[Type2]: https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L30-L45
-[Type5]: https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L90-L104
