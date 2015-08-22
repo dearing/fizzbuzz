@@ -22,7 +22,7 @@ of benchmarks
 -------------
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
-*raspberry pi 2b - go1.5 linux/arm*
+*Raspberry Pi 2 Model B - go1.5 linux/arm*
 -------
 ```
 PASS
@@ -37,7 +37,22 @@ BenchmarkType8-4        20000000                69.0 ns/op
 BenchmarkType9-4         5000000               387 ns/op
 BenchmarkType9m-4        5000000               387 ns/op
 ok      github.com/dearing/fizzbuzz     19.372s
-
+```
+*OnMetal Compute v1 -  go1.5 linux/amd64*
+------------------
+```
+PASS
+BenchmarkType1-20       500000000                2.95 ns/op
+BenchmarkType2-20       1000000000               4.12 ns/op
+BenchmarkType3-20       500000000                3.22 ns/op
+BenchmarkType4-20       50000000                20.3 ns/op
+BenchmarkType5-20       200000000                6.53 ns/op
+BenchmarkType6-20       500000000                3.02 ns/op
+BenchmarkType7-20       1000000000               4.33 ns/op
+BenchmarkType8-20       200000000                6.32 ns/op
+BenchmarkType9-20       50000000                26.0 ns/op
+BenchmarkType9m-20      50000000                27.2 ns/op
+ok      github.com/dearing/fizzbuzz     24.183s
 ```
 
 conclusions
