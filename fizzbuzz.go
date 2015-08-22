@@ -31,7 +31,7 @@ func Type1(i int) string {
 	return string(i)
 }
 
-// Type2 is clearer that Type1
+// Type2 is clearer than Type1
 func Type2(i int) string {
 
 	if i%FIZZ == 0 && i%BUZZ == 0 {
