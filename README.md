@@ -22,7 +22,7 @@ of benchmarks
 -------------
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
-raspberry pi 2
+raspberry pi 2 // go version go1.5 linux/arm
 -------
 ```
 PASS
