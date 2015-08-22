@@ -100,6 +100,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-[Type1]:(https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L10-L26)
-[Type2]:(https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L30-L45)
-[Type5]:(https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L90-L104)
+[Type1]: https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L10-L26
+[Type2]: https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L30-L45
+[Type5]: https://github.com/dearing/fizzbuzz/blob/master/fizzbuzz.go#L90-L104
