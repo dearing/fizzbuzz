@@ -162,30 +162,27 @@ func Type8(i int) (result string) {
 	return
 }
 
-// Type9 does the same as type8 but attempts to memoize the results
-func Type9(i int) (result string) {
+// Type9 does the same as type7 but attempts to memoize the results
+func Type9(i int) string {
 
-	if memoized[i] != "" {
-		result = memoized[i]
-		return
+	if val, ok := memoized[i]; ok {
+		return val
 	}
 
-	switch {
-
-	case i%FIZZ == 0 && i%BUZZ == 0:
-		result = "FIZZBUZZ"
-
-	case i%FIZZ == 0:
-		result = "FIZZ"
-
-	case i%BUZZ == 0:
-		result = "BUZZ"
-
-	default:
-		result = string(i)
+	if i%FIZZBUZZ == 0 {
+		return "FIZZBUZZ"
 	}
 
-	memoized[i] = result
+	if i%FIZZ == 0 {
+		return "FIZZ"
+	}
 
-	return
+	if i%BUZZ == 0 {
+		return "BUZZ"
+	}
+
+	memoized[i] = string(i)
+
+	return string(i)
+
 }
