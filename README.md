@@ -22,46 +22,22 @@ of benchmarks
 -------------
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
-on a i5 destop pc
--------
-```
-PASS
-BenchmarkType1  500000000                3.70 ns/op
-BenchmarkType2  500000000                5.47 ns/op
-BenchmarkType3  500000000                5.99 ns/op
-BenchmarkType4  100000000               18.3 ns/op
-BenchmarkType5  200000000                8.73 ns/op
-BenchmarkType6  500000000                3.68 ns/op
-BenchmarkType7  500000000                5.46 ns/op
-ok      github.com/dearing/fizzbuzz     19.142s
-```
-
-an old mobile celeron
--------
-```
-PASS
-BenchmarkType1  20000000                85.4 ns/op
-BenchmarkType2  20000000               101 ns/op
-BenchmarkType3  20000000                83.2 ns/op
-BenchmarkType4   5000000               645 ns/op
-BenchmarkType5  20000000                99.5 ns/op
-BenchmarkType6  20000000                85.3 ns/op
-BenchmarkType7  20000000               101 ns/op
-ok      github.com/dearing/fizzbuzz     15.603s
-```
-
 raspberry pi 2
 -------
 ```
 PASS
 BenchmarkType1-4        50000000                39.0 ns/op
 BenchmarkType2-4        30000000                39.0 ns/op
-BenchmarkType3-4        30000000                42.3 ns/op
-BenchmarkType4-4         5000000               254 ns/op
-BenchmarkType5-4        20000000                68.0 ns/op
+BenchmarkType3-4        30000000                42.9 ns/op
+BenchmarkType4-4         5000000               252 ns/op
+BenchmarkType5-4        20000000                69.0 ns/op
 BenchmarkType6-4        50000000                39.0 ns/op
 BenchmarkType7-4        50000000                56.8 ns/op
-ok      github.com/dearing/fizzbuzz     13.241s
+BenchmarkType8-4        20000000                69.0 ns/op
+BenchmarkType9-4         5000000               387 ns/op
+BenchmarkType9m-4        5000000               387 ns/op
+ok      github.com/dearing/fizzbuzz     19.372s
+
 ```
 
 conclusions
