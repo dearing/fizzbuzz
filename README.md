@@ -10,7 +10,7 @@ try it out
 go get github.com/dearing/fizzbuzz
 go test -bench=. github.com/dearing/fizzbuzz
 ```
-- click the badge above and see it on drone.io
+- click the badge above and see it on drone
 
 on testing
 ----------
