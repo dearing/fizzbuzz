@@ -3,5 +3,5 @@ build:
   commands:
     - go get
     - go build
-    - time go test -cover -bench=.
+    - go test -cover -bench=.
     
