@@ -1,8 +1,7 @@
-image: go1.2
-script:
-  - time go test
-  - time go test -bench=".*"
-notify:
-  email:
-    recipients:
-      - jacob.dearing@gmail.com
+build:
+  image: golang
+  commands:
+    - go get
+    - go build
+    - time go test -cover -bench=.
+    
