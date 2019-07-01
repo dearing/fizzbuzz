@@ -53,6 +53,7 @@ ok      github.com/dearing/fizzbuzz     24.183s
 ```
 
 *Lenovo Thinkpad E480 - Linux REDACTED 4.4.0-18362-Microsoft #1-Microsoft Mon Mar 18 12:02:00 PST 2019 x86_64 GNU/Linux // go version go1.11.6 linux/amd64*
+------------------
 ```
 goos: linux
 goarch: amd64
