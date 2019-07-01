@@ -52,6 +52,25 @@ BenchmarkType9m-20      50000000                27.2 ns/op
 ok      github.com/dearing/fizzbuzz     24.183s
 ```
 
+*Lenovo Thinkpad E480 - Linux REDACTED 4.4.0-18362-Microsoft #1-Microsoft Mon Mar 18 12:02:00 PST 2019 x86_64 GNU/Linux // go version go1.11.6 linux/amd64
+```
+goos: linux
+goarch: amd64
+BenchmarkType1-8        2000000000               1.67 ns/op
+BenchmarkType2-8        2000000000               1.92 ns/op
+BenchmarkType3-8        2000000000               1.68 ns/op
+BenchmarkType4-8        100000000               10.9 ns/op
+BenchmarkType5-8        2000000000               2.61 ns/op
+BenchmarkType6-8        2000000000               1.69 ns/op
+BenchmarkType7-8        1000000000               2.39 ns/op
+BenchmarkType8-8        2000000000               2.03 ns/op
+BenchmarkType9-8        100000000               10.6 ns/op
+BenchmarkType9m-8       100000000               10.4 ns/op
+PASS
+ok      _/home/dearing/fizzbuzz 30.211s
+```
+
+
 conclusions
 -----------
 Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy to implement testing as part of your project with benchmarking and tracing to boot.  Now if only I could find more practical uses for my time...
