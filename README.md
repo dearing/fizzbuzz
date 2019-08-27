@@ -19,58 +19,9 @@ of benchmarks
 -------------
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
 
-*Raspberry Pi 2 Model B - go1.5 linux/arm*
--------
-```
-PASS
-BenchmarkType1-4        50000000                39.0 ns/op
-BenchmarkType2-4        30000000                39.0 ns/op
-BenchmarkType3-4        30000000                42.9 ns/op
-BenchmarkType4-4         5000000               252 ns/op
-BenchmarkType5-4        20000000                69.0 ns/op
-BenchmarkType6-4        50000000                39.0 ns/op
-BenchmarkType7-4        50000000                56.8 ns/op
-BenchmarkType8-4        20000000                69.0 ns/op
-BenchmarkType9-4         5000000               387 ns/op
-BenchmarkType9m-4        5000000               387 ns/op
-ok      github.com/dearing/fizzbuzz     19.372s
-```
-*OnMetal Compute v1 -  go1.5 linux/amd64*
-------------------
-```
-PASS
-BenchmarkType1-20       500000000                2.95 ns/op
-BenchmarkType2-20       1000000000               4.12 ns/op
-BenchmarkType3-20       500000000                3.22 ns/op
-BenchmarkType4-20       50000000                20.3 ns/op
-BenchmarkType5-20       200000000                6.53 ns/op
-BenchmarkType6-20       500000000                3.02 ns/op
-BenchmarkType7-20       1000000000               4.33 ns/op
-BenchmarkType8-20       200000000                6.32 ns/op
-BenchmarkType9-20       50000000                26.0 ns/op
-BenchmarkType9m-20      50000000                27.2 ns/op
-ok      github.com/dearing/fizzbuzz     24.183s
-```
-
-*Lenovo Thinkpad E480 - Linux REDACTED 4.4.0-18362-Microsoft #1-Microsoft Mon Mar 18 12:02:00 PST 2019 x86_64 GNU/Linux // go version go1.11.6 linux/amd64*
-------------------
-```
-goos: linux
-goarch: amd64
-BenchmarkType1-8        2000000000               1.67 ns/op
-BenchmarkType2-8        2000000000               1.92 ns/op
-BenchmarkType3-8        2000000000               1.68 ns/op
-BenchmarkType4-8        100000000               10.9 ns/op
-BenchmarkType5-8        2000000000               2.61 ns/op
-BenchmarkType6-8        2000000000               1.69 ns/op
-BenchmarkType7-8        1000000000               2.39 ns/op
-BenchmarkType8-8        2000000000               2.03 ns/op
-BenchmarkType9-8        100000000               10.6 ns/op
-BenchmarkType9m-8       100000000               10.4 ns/op
-PASS
-ok      _/home/dearing/fizzbuzz 30.211s
-```
-
+of github actions
+-----------------
+Click on the little ✓ or ✗ next to the latest commit within the banner above this view to see Github actions at work running the tests and benchmarks at need.
 
 conclusions
 -----------
