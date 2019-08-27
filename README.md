@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/dearing/fizzbuzz/workflows/Go/badge.svg)](https://github.com/dearing/fizzbuzz/actions)
+
 fizzbuzz 
 ========
 a simple golang testing and benchmark example
@@ -17,10 +19,6 @@ Just run `go test` to see the testing package at work.  Note there is no cli her
 of benchmarks
 -------------
 Execute `go test -bench=.` to see the testing package run benchmarks on all differant kinds of fizzbuzz functions.
-
-of github actions
------------------
-Click on the little ✓ or ✗ next to the latest commit within the banner above this view to see Github actions at work running the tests and benchmarks at need.
 
 conclusions
 -----------
