@@ -1,5 +1,3 @@
-[![Actions Status](https://github.com/dearing/fizzbuzz/workflows/Go/badge.svg)](https://github.com/dearing/fizzbuzz/actions)
-
 fizzbuzz 
 ========
 a simple golang testing and benchmark example
