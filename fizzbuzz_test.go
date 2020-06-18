@@ -148,9 +148,3 @@ func BenchmarkType9(b *testing.B) {
 	}
 }
 
-// TODO: Appears fast but results say it takes just as much time.
-func BenchmarkType9m(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		Type9(b.N)
-	}
-}
