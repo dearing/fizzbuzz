@@ -162,27 +162,3 @@ func Type8(i int) (result string) {
 	return
 }
 
-// Type9 does the same as type7 but attempts to memoize the results
-func Type9(i int) string {
-
-	if val, ok := memoized[i]; ok {
-		return val
-	}
-
-	if i%FIZZBUZZ == 0 {
-		return "FIZZBUZZ"
-	}
-
-	if i%FIZZ == 0 {
-		return "FIZZ"
-	}
-
-	if i%BUZZ == 0 {
-		return "BUZZ"
-	}
-
-	memoized[i] = string(i)
-
-	return string(i)
-
-}
