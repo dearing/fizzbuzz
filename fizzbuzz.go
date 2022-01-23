@@ -8,12 +8,6 @@ const (
 	FIZZBUZZ = 15 // finally, multiples of 15 yield fizzbuzz
 )
 
-var memoized map[int]string
-
-func init() {
-	memoized = make(map[int]string)
-}
-
 // Type1 is the most performant I could come up with
 func Type1(i int) string {
 
@@ -28,7 +22,7 @@ func Type1(i int) string {
 		return "BUZZ"
 	}
 
-	return string(i)
+	return string(rune(i))
 }
 
 // Type2 is clearer than Type1
@@ -46,7 +40,7 @@ func Type2(i int) string {
 		return "BUZZ"
 	}
 
-	return string(i)
+	return string(rune(i))
 }
 
 // Type3 tosses in a bool for working
@@ -65,7 +59,7 @@ func Type3(i int) string {
 	if p {
 		return "FIZZ"
 	}
-	return string(i)
+	return string(rune(i))
 
 }
 
@@ -85,7 +79,7 @@ func Type4(i int) string {
 	}
 
 	if !p {
-		return string(i)
+		return string(rune(i))
 	}
 	return r
 }
@@ -104,7 +98,7 @@ func Type5(i int) string {
 		return "BUZZ"
 	}
 
-	return string(i)
+	return string(rune(i))
 }
 
 // Type6 is exactly like Type1 but works with without the constants defined before
@@ -121,7 +115,7 @@ func Type6(i int) string {
 		return "BUZZ"
 	}
 
-	return string(i)
+	return string(rune(i))
 }
 
 // Type7 is like Type1 but without the nested start
@@ -139,7 +133,7 @@ func Type7(i int) string {
 		return "BUZZ"
 	}
 
-	return string(i)
+	return string(rune(i))
 }
 
 // Type8 does the same as type5 but with a named return
@@ -156,33 +150,8 @@ func Type8(i int) (result string) {
 		result = "BUZZ"
 
 	default:
-		result = string(i)
+		result = string(rune(i))
 	}
 
 	return
-}
-
-// Type9 does the same as type7 but attempts to memoize the results
-func Type9(i int) string {
-
-	if val, ok := memoized[i]; ok {
-		return val
-	}
-
-	if i%FIZZBUZZ == 0 {
-		return "FIZZBUZZ"
-	}
-
-	if i%FIZZ == 0 {
-		return "FIZZ"
-	}
-
-	if i%BUZZ == 0 {
-		return "BUZZ"
-	}
-
-	memoized[i] = string(i)
-
-	return string(i)
-
 }
