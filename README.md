@@ -3,6 +3,7 @@ fizzbuzz
 a simple golang testing and benchmark example
 
 [![Go](https://github.com/dearing/fizzbuzz/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/dearing/fizzbuzz/actions/workflows/go.yml)
+[![CodeQL](https://github.com/dearing/fizzbuzz/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/dearing/fizzbuzz/actions/workflows/codeql-analysis.yml)
 
 try it out
 ----------
