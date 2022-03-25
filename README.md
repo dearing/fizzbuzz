@@ -22,6 +22,24 @@ conclusions
 -----------
 Testing and Documentation are obviously important in just about *all* things in life but the trick is getting into the habit of doing the right things off the bat.  Go makes it easy to implement testing as part of your project with benchmarking and tracing to boot.  Now if only I could find more practical uses for my time...
 
+```
+go test -bench .
+goos: linux
+goarch: amd64
+pkg: github.com/dearing/fizzbuzz
+cpu: AMD Ryzen 5 3600 6-Core Processor
+BenchmarkType1-12       1000000000               1.204 ns/op
+BenchmarkType2-12       990890618                4.961 ns/op
+BenchmarkType3-12       1000000000               1.127 ns/op
+BenchmarkType4-12       172770543                6.936 ns/op
+BenchmarkType5-12       992789904                1.287 ns/op
+BenchmarkType6-12       999073558                4.805 ns/op
+BenchmarkType7-12       674727265                1.778 ns/op
+BenchmarkType8-12       983222809                4.977 ns/op
+PASS
+ok      github.com/dearing/fizzbuzz     22.931s
+```
+
 License and Authors
 -------------------
 Author: Jacob Dearing // jacob.dearing@gmail.com
