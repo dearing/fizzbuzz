@@ -2,6 +2,8 @@ fizzbuzz
 ========
 a simple golang testing and benchmark example
 
+[![Go](https://github.com/dearing/fizzbuzz/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/dearing/fizzbuzz/actions/workflows/go.yml)
+
 try it out
 ----------
 ```
